@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </h:head>
+    <h:body>
+        <ui:composition template="./templateprincipal.xhtml">
+            <ui:param name="titulo" value="Tela de Cadastro"/>
+            <ui:param name="descricao" value="Cadastre-se"/>
+            <ui:define name="conteudo">
+                <h:form>
+                    <div class="row">
+                        <div class="col-md-4 col-md-offset-4">
+                            <h:outputLabel value="Nome"/>
+                            <h:inputText value="" class="form-control"/>
+                        </div>
+                    </div><br/>
+                    <div class="row">
+                        <div class="col-md-4 col-md-offset-4">
+                            <h:outputLabel value="Idade"/>
+                            <h:inputText value="" class="form-control"/>
+                        </div>
+                    </div>
+                </h:form>
+
+            </ui:define>
+        </ui:composition>
+    </h:body>
+</html>
